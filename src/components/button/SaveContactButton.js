@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button } from 'react-native'
 import { connect } from 'react-redux'
-import { actions } from '../store'
+import { actions } from '../../store'
 
 class SaveContactButton extends Component {
     onPress = () => {

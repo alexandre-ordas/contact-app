@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import ContactList from "./ContactsList";
-import AddContactButton from "./AddContactButton";
+import ContactList from "../ContactsList";
+import AddContactButton from "../button/AddContactButton";
 
 class ContactsListScreen extends Component {
     static navigationOptions = ({ navigation }) => ({
@@ -11,9 +11,9 @@ class ContactsListScreen extends Component {
             />
         )
     })
-    goToContactDetails = contact => {
+    goToContactDetails = contactId => {
         const { navigation } = this.props
-        navigation.navigate('viewContact', { contact })
+        navigation.navigate('viewContact', { contactId })
     }
     render() {
         return <ContactList goToContactDetails={this.goToContactDetails}/>

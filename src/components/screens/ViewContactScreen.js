@@ -1,13 +1,12 @@
 import React, {Component} from "react";
 import { connect } from 'react-redux'
-import ViewContact from "./ViewContact";
-import EditContactButton from './EditContactButton'
-import ContactName from './ContactName'
+import ViewContact from "../ViewContact";
+import EditContactButton from '../button/EditContactButton'
+import ContactName from '../ContactName'
 
 class ViewContactScreen extends Component {
     static navigationOptions = ({ navigation }) => {
         const contactId = navigation.getParam('contactId')
-        console.log(contactId)
         return {
             headerTitle: () => <ContactName contactId={contactId} />,
             headerRight: () => (
@@ -22,7 +21,7 @@ class ViewContactScreen extends Component {
     }
     render() {
         const { navigation, contacts } = this.props
-        const contactId = navigation.getParam('contact')
+        const contactId = navigation.getParam('contactId')
         const contact = contacts.find(c => c.id === contactId)
         return <ViewContact contact={contact} />
     }
