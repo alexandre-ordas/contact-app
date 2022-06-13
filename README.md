@@ -1,8 +1,5 @@
 # Welcome to contact-app
 
-## Screenshot
-[![Front page]()]
-
 Basic React Native App <br>
 <br> In this app you could :
 - Display constact List from API ;
@@ -10,6 +7,10 @@ Basic React Native App <br>
 - Add contact ;
 - Add picture from camera device;
 - Remove contact.
+
+## Screenshot
+<img src="https://github.com/alexandre-ordas/contact-app/blob/main/src/images/front-page.png" height="400">
+<img src="https://github.com/alexandre-ordas/contact-app/blob/main/src/images/contact-page.png" height="400">
 
 ## Technical environment
 - React Native
