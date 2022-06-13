@@ -6,7 +6,6 @@ Basic React Native App <br>
 - Edit contact;
 - Add contact ;
 - Add picture from camera device;
-- Remove contact.
 
 ## Screenshot
 <img src="https://github.com/alexandre-ordas/contact-app/blob/main/src/images/front-page.png" height="400">
